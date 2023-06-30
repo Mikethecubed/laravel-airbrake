@@ -4,10 +4,26 @@ This is a Laravel service provider for the latest Airbrake PHP package https://g
 
 The service provider will configure an instance of Airbrake\Notifier with an ID, key and environment name.
 
+## Monolog 3 Fork
+
+Add the following within `composer.json`:
+```
+"repositories": {
+    "laravel-airbrake": {
+        "type": "vcs",
+        "url": "https://github.com/Mikethecubed/laravel-airbrake.git"
+    }
+    "phpbrake": {
+        "type": "vcs",
+        "url": "https://github.com/DoctorMcKay/airbrake-phpbrake.git"
+    }
+}
+```
+
 ## Install
 Require this package via composer.
 ```
-composer require kouz/laravel-airbrake
+composer require kouz/laravel-airbrake:dev-master
 ```
 For Laravel >=5.5 the package will be discoverd. For Laravel <=5.4 add package to list of service providers in config/app.php
 ```

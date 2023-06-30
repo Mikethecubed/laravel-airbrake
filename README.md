@@ -12,7 +12,7 @@ Add the following within `composer.json`:
     "laravel-airbrake": {
         "type": "vcs",
         "url": "https://github.com/Mikethecubed/laravel-airbrake.git"
-    }
+    },
     "phpbrake": {
         "type": "vcs",
         "url": "https://github.com/DoctorMcKay/airbrake-phpbrake.git"
